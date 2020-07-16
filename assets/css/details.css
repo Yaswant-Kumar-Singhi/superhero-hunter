@@ -1,0 +1,161 @@
+
+/* ....Navigation Bar....... */
+
+header {
+  width           : 100%;
+  height          : 4rem;
+  background-color: whitesmoke;
+  position        : fixed;
+  justify-content : space-between;
+  top             : 0;
+  display         : flex;
+  align-items     : center;
+  margin-bottom   : 2rem ;
+}
+
+
+a {
+    text-decoration: none;
+  }
+  
+  #logo-text {
+    color: burlywood;
+  }
+  
+  .nav-right {
+    display: flex;
+    margin-right: 1.3rem;
+  }
+  
+  .nav-right a {
+    color: burlywood;
+  }
+
+  .nav-right a:hover {
+    display: flex;
+    color  : black;
+  }
+  
+  .nav-right div { 
+    font-size  : 1.2rem;
+    font-weight: 700;
+  }
+  
+  .nav-left {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+  }
+  
+  .nav-left h4 {
+    display: inline;
+  }
+
+  
+
+
+  .card {
+    margin         : 10% auto;
+    border-radius  : 10px;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    width          : 50%;
+    background     : #151515;
+    justify-content: center;
+    font-family    : sans-serif;
+  }
+  
+  
+  .card-details {
+    width         : 100%;
+    margin        : 50px 0;
+    padding-top   : 40px;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    color         : white;
+  }
+
+  .avatar-holder {
+    z-index      : 1;
+    margin       : auto;
+    border-radius: 25px;
+    width        : 300px;
+    height       : 10rem;
+    background   : white;
+    overflow     : hidden;
+    
+   
+  }
+  
+  .avatar-holder img {
+    width     : 100%;
+    height    : 100%;
+    object-fit: cover;
+   
+  }
+  
+  .superheroInfo {
+    width    : 80%;
+    margin   : 15px auto;
+  }
+  
+  .bar {
+    height         : 5px;
+    background     : crimson;
+    text-align     : right;
+    font-size      : 14px;
+    color          : white;
+    font-size      : 16px;
+    padding        : 1px 5px 17px 0px;
+    padding-bottom : 17px;
+    border-radius  : 8px;
+  }
+  
+  
+  .detail {
+    padding        : 8px;
+    display        : flex;
+    justify-content: space-between;
+    border-bottom  : 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .detail-power {
+    padding        : 8px;
+    justify-content: space-between;
+  }
+  
+  #superhero-image {
+    max-height: 500px;
+    max-width : 90%;
+    box-shadow: 2px 5px 10px #000000;
+  }
+  
+  #superhero-title {
+    margin-top: 40px;
+  }
+  
+  .info-title {
+    margin-right : 10%;
+    font-weight  : 400;
+    margin-bottom: 7px;
+  }
+  
+  .info-content {
+    text-align: right;
+    
+  }
+  
+  #fav-icon {
+    transition: 0.5s;
+    font-size : 1.2rem;
+    color     : crimson;
+  }
+  
+  #fav-icon:hover {
+    transform: scale(1.8);
+    cursor   : pointer;
+  }
+  
+  
