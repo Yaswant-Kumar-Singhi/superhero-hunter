@@ -1,0 +1,283 @@
+
+/* ....Navigation Bar....... */
+
+header {
+  width           : 100%;
+  height          : 4rem;
+  background-color: whitesmoke;
+  position        : fixed;
+  justify-content : space-between;
+  top             : 0;
+  display         : flex;
+  align-items     : center;
+}
+  
+  a {
+    text-decoration: none;
+  }
+
+  main{
+      height: 35rem;
+       
+  }
+  
+  #logo-text {
+    color: burlywood;
+  }
+  
+  .nav-right {
+    display: flex;
+    margin-right: 1.3rem;
+  }
+  
+  .nav-right a {
+    color: burlywood;
+  }
+
+  .nav-right a:hover {
+    display: flex;
+    color  : black;
+  }
+  
+  .nav-right div { 
+    font-size  : 1.2rem;
+    font-weight: 700;
+  }
+  
+  .nav-left {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+  }
+  
+  .nav-left h4 {
+    display: inline;
+  }
+  
+  body:after {
+    content               : "";
+    display               : block;
+    position              : fixed;
+    top                   : 0;
+    left                  : 0;
+    margin                : 0;
+    z-index               : -1;
+    width                 : 150%;
+    height                : 150%;
+    background            : url('../background.jpg');
+    background-size       : contain;
+    /* background-position: 600px -200px; */
+  
+    filter: blur(0px);
+  }
+  
+  h1 {
+    font-size: 170%;
+    position : relative;
+    z-index  : 10;
+  }
+  
+  /* ................Media Queries.......... */
+  @media (max-width: 768px) {
+  
+    h1 {
+      font-size: 120%;
+    }
+  
+    p {
+      display        : none;
+      /*     overflow: hidden; */
+      width          : 100%;
+      height         : 30%;
+    }
+  
+    .watch {
+      margin: 5% auto;
+    }
+  }
+  
+  /* ..........Main CSS for index.html............. */
+  
+  ::-webkit-input-placeholder {
+    color: rgba(170, 169, 169, 0.856);
+  }
+  
+  ::-moz-placeholder {
+    text-align: center;
+  }
+  
+  #search-box {
+    display       : flex;
+    flex-direction: column;
+    width         : 60%;
+    max-width     : 500px;
+  }
+  
+  div.input {
+    position: relative;
+    height  : 80px;
+  }
+  
+  div.input input {
+    margin       : 0 auto;
+    height       : 60%;
+    width        : 100%;
+    padding      : 0 10px;
+    border-radius: 2px;
+    position     : absolute;
+    border       : none;
+  }
+  
+  .superman {
+    margin: 20% auto;
+  }
+  
+  div.superman input {
+    border       : 2px solid #FBC700;
+    border-radius: 2rem;
+  }
+
+  /* .....CSS for Results box..... */
+  
+  #results {
+    width        : 100%;
+    border-radius: 8px;
+    margin-top   : 8%;
+    box-sizing   : border-box;
+    margin-bottom: 10px;
+  }
+  
+  .result-card {
+    width          : 100%;
+    padding        : 20px 10px 10px 10px;
+    text-align     : left;
+    color          : white;
+    margin-bottom  : 3px;
+    background-color: purple;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+  }
+  
+  
+  .result-card-image {
+    height  : 100px;
+    
+  }
+  
+  .result-card-container {
+    display        : flex;
+    flex-direction : column;
+    flex-grow      : 1;
+    padding-left   : 20px;
+    justify-content: space-around;
+  }
+  
+  
+  .bg-red,
+  .bg-green,
+  .detailsButton {
+    border       : 1px solid white;
+    position     : relative;
+    z-index      : 10;
+    color        : white;
+    text-align   : center;
+    background   : rgba(0, 0, 0, .3);
+    outline      : none;
+  }
+  
+  .bg-red:hover,
+  .bg-green:hover,
+  .detailsButton:hover {
+    background    : rgba(255, 255, 255, .8);
+    color         : black;
+    box-shadow    : 0 0 10px rgba(255, 255, 255, .5);
+    mix-blend-mode: screen;
+    cursor        : pointer;
+  }
+  
+  .bg-green {
+    background-color: green
+  }
+  
+  .bg-red {
+    background-color: tomato
+  }
+  
+  .detailsButton:active {
+    transform: translateY(2px);
+    cursor   : pointer;
+  }
+  
+  
+  
+  /* .......CSS for Snackbar........ */
+  
+  #snackbar {
+    border-radius   : 2px;
+    padding         : 15px;
+    position        : fixed;
+    visibility      : hidden;
+    min-width       : 300px;
+    margin-left     : -125px;
+    color           : white;
+    background-color: rgb(29, 139, 29);
+    text-align      : center;
+    left            : 50%;
+    top             : 80px;
+    z-index         : 30;
+  }
+  
+  #snackbar.visible {
+    visibility: visible;
+    animation : fadein 0.7s, fadeout 0.7s 3s;
+  }
+  
+  /* ..........Main CSS for favourites.html.......... */
+  
+  #fav-card {
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: center;
+    width          : 100%;
+    min-height     : 100vh;
+    margin         : 80px auto;
+  }
+  
+  #fav-card .card {
+    width           : 15%;
+    height          : 350px;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+    background-color: #151515;
+    margin          : 20px;
+  }
+  
+  #fav-card .card .avatar {
+    position     : relative;
+    border-radius: 10px 10px 0px 0px;
+    width        : 94%;
+    height       : 90%;
+    z-index      : 1;
+    overflow     : hidden;
+    animation    : fadeIn 1.5s;
+    border       : 6px solid crimson;
+  }
+  
+  #fav-card .card .detailsButton {
+    margin : 20px auto;
+    padding: 0px 20px;
+  }
+
+  /* Styling Footer */
+  footer{
+      height: 3rem;
+      font-size: medium;
+      color: rgb(196, 165, 118);
+      font-size:2rem;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 1000;
+  }
